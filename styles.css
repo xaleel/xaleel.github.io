@@ -6,31 +6,11 @@ select {
 #293241
 }
 
-@media (max-width: 75em) {
-    html {
-      font-size: 80%;
-    }
-  }
-  
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
-    html {
-      font-size: 70%;
-    }
-  }
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
-  }
-
-
 
 html {
     font-family: Trirong;
     scroll-behavior: smooth;
+    font-size: calc(0.8vw + 0.8vh);
 }
 
 body {
