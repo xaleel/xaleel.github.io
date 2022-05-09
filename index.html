@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/81831e8720.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=emboss">
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/81831e8720.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="navbar">
+        <a href="#about"><nav><h2 class="font-effect-emboss">About</h2></nav></a>
+        <a href="#work"><nav><h2 class="font-effect-emboss">Projects</h2></nav></a>
+        <a href="#contact"><nav><h2 class="font-effect-emboss">Contact</h2></nav></a>
+        <nav onclick="resume(event)"><h2 class="font-effect-emboss pointer">Résumé</h2></nav>
+    </header>
+    <div class="about" id="about">
+        <div class="content" id="welcome-section"> 
+            <h1>Hi, I am Khaleel</h1>
+            <p id="web">a web developer</p>
+        </div>
+    </div>
+    <div class="work" id="work">
+        <h1>Projects:</h1>
+        <h4 id="info" onclick="Fadeout()">Hover for more info (click to dismiss)</h4>
+        <div class="projects" id="projects">
+            <div class="item project-tile">
+                <div class="img">
+                    <img src="wordle.png" alt="cs50">
+                    <div class="hidden">
+                        <p>Made using <i class="fa-brands fa-react"></i>    <i class="fa-brands fa-python"></i></p>
+                        <p><a href="https://github.com/xaleel/wordle-solver" target="_blank">Source code <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i></a></p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="course">
+                        <span><</span> <p style="display: inline; font-size: 80%;">Wordle Solver</p> <span>/></span>
+                    </div>
+                    <div class="hidden">
+                        <h6>A web application that suggests words for the popular game Wordle.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item project-tile">
+                <div class="img">
+                    <img src="commerce.png" alt="cs50">
+                    <div class="hidden">
+                        <p>Made using <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></p>
+                        <p><a href="https://github.com/xaleel/Web-projects/tree/main/Commerce" target="_blank">Source code <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i></a></p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="course">
+                        <span><</span> <p style="display: inline; font-size: 80%;">Commerce - auctions</p> <span>/></span>
+                    </div>
+                    <div class="hidden">
+                        <h6>A Django market-place for buying and selling items.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item project-tile">
+                <div class="img">
+                    <img src="Finance.png" alt="cs50">
+                    <div class="hidden">
+                        <p>Made using <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></p>
+                        <p><a href="https://github.com/xaleel/Web-projects/tree/main/Finance" target="_blank">Source code <i class="fa-brands fa-github"></i> </a></p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="course">
+                        <span><</span> <p style="display: inline; font-size: 80%;">Finance - Portfolio SIMulator</p> <span>/></span>
+                    </div>
+                    <div class="hidden">
+                        <h6>A Flask web app that simulates buying and selling stocks, with prices updating in realtime.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item project-tile">
+                <div class="img">
+                    <img src="other.png" alt="cs50">
+                    <div class="hidden">
+                        <p><a href="https://www.freecodecamp.org/certification/xaleel/responsive-web-design" target="_blank">1 (bottom of the page) <i class="fa-brands fa-free-code-camp"></i> </a></p>
+                        <p><a href="https://www.freecodecamp.org/certification/xaleel/javascript-algorithms-and-data-structures" target="_blank">2  <i class="fa-brands fa-free-code-camp"></i> </a></p>
+                        <p><a href="https://www.freecodecamp.org/certification/xaleel/front-end-development-libraries" target="_blank">3 <i class="fa-brands fa-free-code-camp"></i> </a></p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="course">
+                        <span><</span> <p style="display: inline; font-size: 80%;">Other web projects</p> <span>/></span>
+                    </div>
+                    <div class="hidden">
+                        <h6>15 web applications with Javascript.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item project-tile">
+                <div class="img">
+                    <img src="c.png" alt="cs50">
+                    <div class="hidden">
+                        <p>Made using <i class="fa-solid fa-c"></i></p>
+                        <p><a href="https://github.com/xaleel/cs50" target="_blank">Source code <i class="fa-brands fa-github"></i> </a></p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="course">
+                        <span><</span> <p style="display: inline; font-size: 80%;">Other programs in C</p> <span>/></span>
+                    </div>
+                    <div class="hidden">
+                        <h6>14 programs in C - projects for the CS50 course.</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="content">
+            <h1>Contact me</h1>
+            <h6 style="opacity: 0;">Hello there. Have a nice day!</h6>
+            <div class="line">
+                <a href="https://github.com/xaleel" target="_blank" id="profile-link"><h3> <i class="fa-brands fa-github"></i> Github</h3></a>
+                <a href=""><h3> <i class="fa-brands fa-twitter"></i> Twitter</h3></a>
+                <a href=""><h3> <i class="fa-brands fa-linkedin"></i> Linked-in</h3></a>
+                <a href=""><h3> <i class="fa-solid fa-envelope-open-text"></i> Email</h3></a>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <div class="cv nodsp" id="resume" onclick="resume(event)">
+        <img src="cv.png" alt="cv" id="cv">
+        <div class="cv-btn">
+            <button class="cv-dl" onclick="resume(event)">Back</button>
+            <button class="cv-dl" onclick="dlcv()" id="cv-dl">Download</button>
+        </div>
+    </div>
+</body>
+</html>
