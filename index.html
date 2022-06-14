@@ -3,156 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Khaleel Jaber</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="ico.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaleel Jaber - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/81831e8720.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=emboss">
-    <script src="scripts.js"></script>
-    <script src="https://kit.fontawesome.com/81831e8720.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header id="navbar">
-        <a href="#about"><nav><h2 class="font-effect-emboss">About</h2></nav></a>
-        <a href="#work"><nav><h2 class="font-effect-emboss">Projects</h2></nav></a>
-        <a href="#contact"><nav><h2 class="font-effect-emboss">Contact</h2></nav></a>
-        <nav onclick="resume(event)"><h2 class="font-effect-emboss pointer">Résumé</h2></nav>
+    <header class="header-wide no-dsp-1" id="hor-header" >
+        <div class="header-logo">
+            <a href="#start">
+                <svg width="0" height="0" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" id="header-svg" onmouseenter="randColor()" onmouseleave="randColor()">
+                    <g id="Frame 1">
+                        <path id="K" d="M76.0943 57.9961V133.136L131.004 57.9961L132.364 59.1861L101.934 100.666L147.154 176.996H131.344L93.2643 112.566L76.0943 136.196V176.996H61.9843V57.9961H76.0943Z" fill="black"/>
+                        <path id="cut-d" d="M93.2673 112.583L147.148 176.996L136.985 178.358L130.507 178.257L93.2673 112.583Z" fill="#0b1b34"/>
+                        <path id="cut-u" d="M101.936 100.657L131.036 57.9826L133.921 58.4322L107.385 99.2766L101.936 100.657Z" fill="#0b1b34"/>
+                    </g>
+                </svg>
+            </a>
+            </div>
+        <ol>
+            <li><a href="#about"><p class="header-btn">About</p></a></li>
+            <li><a href="#projects"><p class="header-btn">Projects</p></a></li>
+            <li><a href="#contact"><p class="header-btn">Contact me</p></a></li>
+            <li><p class="header-btn" id="resume-btn">Resume</p></li>
+        </ol>
     </header>
-    <div class="about" id="about">
-        <div class="content" id="welcome-section"> 
-            <h1>Hi, I am Khaleel</h1>
-            <p id="web">a web developer</p>
+    <input class="checkbox no-dsp-1" type="checkbox" name="" id="menu-checkbox" />
+    <div class="hamburger-lines no-dsp-1">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </div>
+    <header class="header-tall no-dsp-1" id="ver-header" >  
+        <div class="ver-header-logo">
+            <a href="#start">
+                <svg width="87" height="119" viewBox="0 0 87 119" fill="none" xmlns="http://www.w3.org/2000/svg" class="ver-header-svg">
+                    <path d="M7.98047 2V120.996L22.0898 120.992V80.2168L39.2642 56.5707L93.1336 120.983L47.9373 44.6512L77.0046 2.00454L46.5043 43.7269L22.0898 77.1328V2H7.98047Z" fill="#c0d8fe"/>
+                    <path d="M10.5805 98.8816L15.8845 98.8816L10.5805 95.0056L10.6645 94.9096L13.5925 97.0576L18.9805 93.8656L18.9805 94.9816L14.4325 97.6696L16.1005 98.8816L18.9805 98.8816L18.9805 99.8776L10.5805 99.8776L10.5805 98.8816ZM18.9805 92.0318L18.9805 93.0278L10.5805 93.0278L10.5805 92.0318L14.4445 92.0318L14.4445 88.1318L10.5805 88.1318L10.5805 87.1358L18.9805 87.1358L18.9805 88.1318L14.5645 88.1318L14.5645 92.0318L18.9805 92.0318ZM18.9805 86.1511L18.9805 86.2951L10.5805 82.7071L10.5205 82.5751L18.9805 79.5511L18.9805 80.5711L16.3405 81.5071L16.3405 85.0111L18.9805 86.1511ZM11.8765 83.0791L16.2205 84.9631L16.2205 81.5431L11.8765 83.0791ZM18.9805 73.9075L18.9805 78.4675L10.5805 78.4675L10.5805 77.4715L18.8605 77.4715L18.8605 73.9075L18.9805 73.9075ZM10.5805 67.9258L10.7005 67.9258L10.7005 71.7058L14.3005 71.7058L14.3005 68.2018L14.4205 68.2018L14.4205 71.7058L18.8605 71.7058L18.8605 67.6618L18.9805 67.6618L18.9805 72.7018L10.5805 72.7018L10.5805 67.9258ZM10.5805 61.6212L10.7005 61.6212L10.7005 65.4012L14.3005 65.4012L14.3005 61.8972L14.4205 61.8972L14.4205 65.4012L18.8605 65.4012L18.8605 61.3572L18.9805 61.3572L18.9805 66.3972L10.5805 66.3972L10.5805 61.6212ZM18.9805 55.5325L18.9805 60.0925L10.5805 60.0925L10.5805 59.0965L18.8605 59.0965L18.8605 55.5325L18.9805 55.5325ZM10.7005 51.0409L10.5805 51.0409L10.5805 48.9049L17.3965 48.9049C18.0285 48.9049 18.4525 49.0329 18.6685 49.2889C18.8765 49.5449 18.9805 49.9329 18.9805 50.4529C18.9805 50.9649 18.9045 51.4209 18.7525 51.8209L18.6565 51.7849C18.8085 51.4009 18.8845 51.0049 18.8845 50.5969C18.8845 50.3249 18.7685 50.1449 18.5365 50.0569C18.3045 49.9609 17.9285 49.9129 17.4085 49.9129L10.7005 49.9129L10.7005 51.0409ZM18.9805 47.7957L18.9805 47.9397L10.5805 44.3517L10.5205 44.2197L18.9805 41.1957L18.9805 42.2157L16.3405 43.1517L16.3405 46.6557L18.9805 47.7957ZM11.8765 44.7237L16.2205 46.6077L16.2205 43.1877L11.8765 44.7237ZM10.6765 40.112C10.6125 39.184 10.5805 38.364 10.5805 37.652C10.5805 35.676 11.2405 34.688 12.5605 34.688C13.0565 34.688 13.4845 34.832 13.8445 35.12C14.1965 35.408 14.4365 35.868 14.5645 36.5C14.6365 35.892 14.8205 35.412 15.1165 35.06C15.4125 34.708 15.9285 34.532 16.6645 34.532C18.2085 34.532 18.9805 35.52 18.9805 37.496L18.9805 40.112L10.6765 40.112ZM18.8605 39.116L18.8605 37.496C18.8605 36.784 18.6765 36.28 18.3085 35.984C17.9325 35.68 17.3605 35.528 16.5925 35.528C15.8245 35.528 15.3125 35.68 15.0565 35.984C14.8005 36.288 14.6645 36.74 14.6485 37.34L14.6485 39.116L18.8605 39.116ZM10.7005 37.652C10.7005 38.116 10.7285 38.604 10.7845 39.116L14.5285 39.116L14.5285 37.34C14.4805 36.212 13.8325 35.648 12.5845 35.648C11.9765 35.648 11.5125 35.816 11.1925 36.152C10.8645 36.488 10.7005 36.988 10.7005 37.652ZM10.5805 28.4923L10.7005 28.4923L10.7005 32.2723L14.3005 32.2723L14.3005 28.7683L14.4205 28.7683L14.4205 32.2723L18.8605 32.2723L18.8605 28.2283L18.9805 28.2283L18.9805 33.2683L10.5805 33.2683L10.5805 28.4923ZM10.6765 26.9636C10.6125 26.0356 10.5805 25.2156 10.5805 24.5036C10.5805 22.5276 11.2405 21.5396 12.5605 21.5396C13.1205 21.5396 13.6205 21.6756 14.0605 21.9476C14.5005 22.2196 14.7925 22.6876 14.9365 23.3516L18.9805 20.9516L18.9805 22.0676L15.0085 24.4196L15.0085 25.9676L18.9805 25.9676L18.9805 26.9636L10.6765 26.9636ZM10.7005 24.5036C10.7005 24.9676 10.7285 25.4556 10.7845 25.9676L14.8885 25.9676L14.8885 24.1916C14.8405 23.0636 14.0725 22.4996 12.5845 22.4996C11.9765 22.4996 11.5125 22.6676 11.1925 23.0036C10.8645 23.3396 10.7005 23.8396 10.7005 24.5036Z" fill="#0b1b34" />
+                </svg>
+            </a>
+            </div>
+        <ul>
+            <li><a href="#about"><p class="header-btn">About</p></a></li>
+            <li><a href="#projects"><p class="header-btn">Projects</p></a></li>
+            <li><a href="#contact"><p class="header-btn">Contact me</p></a></li>
+            <li><p class="header-btn" id="resume-btn">Resume</p></li>
+        </ul>
+    </header>
+    <div class="start" id="start"></div>
+    <svg width="87" height="119" viewBox="0 0 87 119" fill="none" xmlns="http://www.w3.org/2000/svg" class="main-anim-svg">
+        <path d="M7.98047 2V120.996L22.0898 120.992V80.2168L39.2642 56.5707L93.1336 120.983L47.9373 44.6512L77.0046 2.00454L46.5043 43.7269L22.0898 77.1328V2H7.98047Z" fill="#c0d8fe"/>
+        <path d="M10.5805 98.8816L15.8845 98.8816L10.5805 95.0056L10.6645 94.9096L13.5925 97.0576L18.9805 93.8656L18.9805 94.9816L14.4325 97.6696L16.1005 98.8816L18.9805 98.8816L18.9805 99.8776L10.5805 99.8776L10.5805 98.8816ZM18.9805 92.0318L18.9805 93.0278L10.5805 93.0278L10.5805 92.0318L14.4445 92.0318L14.4445 88.1318L10.5805 88.1318L10.5805 87.1358L18.9805 87.1358L18.9805 88.1318L14.5645 88.1318L14.5645 92.0318L18.9805 92.0318ZM18.9805 86.1511L18.9805 86.2951L10.5805 82.7071L10.5205 82.5751L18.9805 79.5511L18.9805 80.5711L16.3405 81.5071L16.3405 85.0111L18.9805 86.1511ZM11.8765 83.0791L16.2205 84.9631L16.2205 81.5431L11.8765 83.0791ZM18.9805 73.9075L18.9805 78.4675L10.5805 78.4675L10.5805 77.4715L18.8605 77.4715L18.8605 73.9075L18.9805 73.9075ZM10.5805 67.9258L10.7005 67.9258L10.7005 71.7058L14.3005 71.7058L14.3005 68.2018L14.4205 68.2018L14.4205 71.7058L18.8605 71.7058L18.8605 67.6618L18.9805 67.6618L18.9805 72.7018L10.5805 72.7018L10.5805 67.9258ZM10.5805 61.6212L10.7005 61.6212L10.7005 65.4012L14.3005 65.4012L14.3005 61.8972L14.4205 61.8972L14.4205 65.4012L18.8605 65.4012L18.8605 61.3572L18.9805 61.3572L18.9805 66.3972L10.5805 66.3972L10.5805 61.6212ZM18.9805 55.5325L18.9805 60.0925L10.5805 60.0925L10.5805 59.0965L18.8605 59.0965L18.8605 55.5325L18.9805 55.5325ZM10.7005 51.0409L10.5805 51.0409L10.5805 48.9049L17.3965 48.9049C18.0285 48.9049 18.4525 49.0329 18.6685 49.2889C18.8765 49.5449 18.9805 49.9329 18.9805 50.4529C18.9805 50.9649 18.9045 51.4209 18.7525 51.8209L18.6565 51.7849C18.8085 51.4009 18.8845 51.0049 18.8845 50.5969C18.8845 50.3249 18.7685 50.1449 18.5365 50.0569C18.3045 49.9609 17.9285 49.9129 17.4085 49.9129L10.7005 49.9129L10.7005 51.0409ZM18.9805 47.7957L18.9805 47.9397L10.5805 44.3517L10.5205 44.2197L18.9805 41.1957L18.9805 42.2157L16.3405 43.1517L16.3405 46.6557L18.9805 47.7957ZM11.8765 44.7237L16.2205 46.6077L16.2205 43.1877L11.8765 44.7237ZM10.6765 40.112C10.6125 39.184 10.5805 38.364 10.5805 37.652C10.5805 35.676 11.2405 34.688 12.5605 34.688C13.0565 34.688 13.4845 34.832 13.8445 35.12C14.1965 35.408 14.4365 35.868 14.5645 36.5C14.6365 35.892 14.8205 35.412 15.1165 35.06C15.4125 34.708 15.9285 34.532 16.6645 34.532C18.2085 34.532 18.9805 35.52 18.9805 37.496L18.9805 40.112L10.6765 40.112ZM18.8605 39.116L18.8605 37.496C18.8605 36.784 18.6765 36.28 18.3085 35.984C17.9325 35.68 17.3605 35.528 16.5925 35.528C15.8245 35.528 15.3125 35.68 15.0565 35.984C14.8005 36.288 14.6645 36.74 14.6485 37.34L14.6485 39.116L18.8605 39.116ZM10.7005 37.652C10.7005 38.116 10.7285 38.604 10.7845 39.116L14.5285 39.116L14.5285 37.34C14.4805 36.212 13.8325 35.648 12.5845 35.648C11.9765 35.648 11.5125 35.816 11.1925 36.152C10.8645 36.488 10.7005 36.988 10.7005 37.652ZM10.5805 28.4923L10.7005 28.4923L10.7005 32.2723L14.3005 32.2723L14.3005 28.7683L14.4205 28.7683L14.4205 32.2723L18.8605 32.2723L18.8605 28.2283L18.9805 28.2283L18.9805 33.2683L10.5805 33.2683L10.5805 28.4923ZM10.6765 26.9636C10.6125 26.0356 10.5805 25.2156 10.5805 24.5036C10.5805 22.5276 11.2405 21.5396 12.5605 21.5396C13.1205 21.5396 13.6205 21.6756 14.0605 21.9476C14.5005 22.2196 14.7925 22.6876 14.9365 23.3516L18.9805 20.9516L18.9805 22.0676L15.0085 24.4196L15.0085 25.9676L18.9805 25.9676L18.9805 26.9636L10.6765 26.9636ZM10.7005 24.5036C10.7005 24.9676 10.7285 25.4556 10.7845 25.9676L14.8885 25.9676L14.8885 24.1916C14.8405 23.0636 14.0725 22.4996 12.5845 22.4996C11.9765 22.4996 11.5125 22.6676 11.1925 23.0036C10.8645 23.3396 10.7005 23.8396 10.7005 24.5036Z" fill="#0b1b34" />
+    </svg>
+    <div class="content  no-dsp-1">
+        <div class="intro">
+            <p class="hi">Hi, I am</p>
+            <h3 class="name">haleel Jaber</h3>
+            <h2 class="wdev"><span>&lt;</span> a web developer <span>/&gt;</span></a></h2>
         </div>
     </div>
-    <div class="work" id="work">
-        <h1>Projects:</h1>
-        <h4 id="info" onclick="Fadeout()">Hover for more info (click to dismiss)</h4>
-        <div class="projects" id="projects">
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="wordle.png" alt="cs50">
-                    <div class="hidden">
-                        <p>Made using <i class="fa-brands fa-react"></i>    <i class="fa-brands fa-python"></i></p>
-                        <p><a href="https://github.com/xaleel/wordle-solver" target="_blank">Source code <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i></a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Wordle Solver</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>A web application that suggests words for the popular game Wordle.</h6>
-                    </div>
-                </div>
+    <div class="section no-dsp-1" id="about">
+        <div class="about-container">
+            <div class="about-left">
+                <h2 class="about-title">About me</h2>
+                <p>My name is Khaleel Jaber and I am a passionate full stack web developer, chess trainer, ESL teacher, and medical student.</p>
+                <p>While studying for exams, I decided at one point to learn programming during breaks and made a simple Python program to track my progress and suggest topics to revise, and that was when I fell in love with programming. Years later I decided to pursue this passion and started taking computer science and web development courses.</p>
+                <p>Technologies I regularly work with:</p>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>Python (Django, Flask)</li>
+                    <li>Javascript (ES6+, JQuery)</li>
+                    <li>React</li>
+                    <li>Node.js, Express</li>
+                    <li>SQL, MongoDB</li>
+                    <li>Git</li>
+                    <li>C</li>
+                </ul>
             </div>
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="commerce.png" alt="cs50">
-                    <div class="hidden">
-                        <p>Made using <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></p>
-                        <p><a href="https://github.com/xaleel/Web-projects/tree/main/Commerce" target="_blank">Source code <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i></a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Commerce - auctions</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>A Django market-place for buying and selling items.</h6>
-                    </div>
-                </div>
+            <div class="pic">
+                <img src="ppic.jpg" alt="profile-picture" class="about-pic">
+                <span class="about-pic-bg"></span>
+                <div class="pic-dec dec1"></div>
+                <div class="pic-dec dec2"></div>
             </div>
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="network.png" alt="cs50">
-                    <div class="hidden">
-                        <p>Made using <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></p>
-                        <p><a href="https://github.com/xaleel/Web-projects/tree/main/Network" target="_blank">Source code <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i></a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Network</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>A Django-based social network with very basic functionality.</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="Finance.png" alt="cs50">
-                    <div class="hidden">
-                        <p>Made using <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></p>
-                        <p><a href="https://github.com/xaleel/Web-projects/tree/main/Finance" target="_blank">Source code <i class="fa-brands fa-github"></i> </a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Finance - Portfolio SIMulator</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>A Flask web app that simulates buying and selling stocks, with prices updating in realtime.</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="other.png" alt="cs50">
-                    <div class="hidden">
-                        <p><a href="https://www.freecodecamp.org/certification/xaleel/responsive-web-design" target="_blank">1 (bottom of the page) <i class="fa-brands fa-free-code-camp"></i> </a></p>
-                        <p><a href="https://www.freecodecamp.org/certification/xaleel/javascript-algorithms-and-data-structures" target="_blank">2  <i class="fa-brands fa-free-code-camp"></i> </a></p>
-                        <p><a href="https://www.freecodecamp.org/certification/xaleel/front-end-development-libraries" target="_blank">3 <i class="fa-brands fa-free-code-camp"></i> </a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Other web projects</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>15 web applications with Javascript and React.</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item project-tile">
-                <div class="img">
-                    <img src="c.png" alt="cs50">
-                    <div class="hidden">
-                        <p>Made using <i class="fa-solid fa-c"></i></p>
-                        <p><a href="https://github.com/xaleel/cs50" target="_blank">Source code <i class="fa-brands fa-github"></i> </a></p>
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="course">
-                        <span><</span> <p style="display: inline; font-size: 80%;">Other programs in C</p> <span>/></span>
-                    </div>
-                    <div class="hidden">
-                        <h6>14 programs in C - projects for the CS50 course.</h6>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-    <div class="contact" id="contact">
-        <div class="content">
-            <h1>Contact me</h1>
-            <h6 style="opacity: 0;">Hello there. Have a nice day!</h6>
-            <div class="line">
-                <a href="https://www.linkedin.com/in/KhaleelJaber"  target="_blank"><h3> <i class="fa-brands fa-linkedin"></i> Linked-in</h3></a>
-                <a href="https://github.com/xaleel" target="_blank" id="profile-link"><h3> <i class="fa-brands fa-github"></i> Github</h3></a>
-                <a href="mailto: xaleelchess@gmail.com"><h3> <i class="fa-solid fa-envelope-open-text"></i> Email</h3></a>
+    <div class="section no-dsp-1" id="projects">
+        <h1 id="projects-title">My projects</h1>
+        <div class="project">
+            <div class="project-img-container">
+                <img src="wordle.png" alt="wordle-app-screenshot" class="project-img">
+                <span class="img-overlay"></span>
             </div>
-            <div class="footer"></div>
+            <div class="project-title">Wordle solv3r</div>
+            <div class="project-desc">A web application that suggests words based on previous guesses for the popular game Wordle. Win every time.</div>
+            <ul class="project-built-with">
+                <li>React</li>
+                <li>Django</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/xaleel/wordle-solver" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/watch?v=XHds0p3BMFk" target="_blank" class="l-icon tooltip tt-yt"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wordle-solv3r.herokuapp.com/" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project right-align">
+            <div class="project-img-container">
+                <img src="prosper.png" alt="wordle-app-screenshot" class="project-img">
+                <span class="img-overlay"></span>
+            </div>
+            <div class="project-title">Prosper</div>
+            <div class="project-desc">A browser turn-based medieval strategy simulation game, where every decision has a consequence.</div>
+            <ul class="project-built-with">
+                <li>React</li>
+                <li>Django</li>
+            </ul>
+            <div class="project-links">
+                <a href="#" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-img-container">
+                <img src="md.png" alt="wordle-app-screenshot" class="project-img">
+                <span class="img-overlay"></span>
+            </div>
+            <div class="project-title">Markdown Previewer</div>
+            <div class="project-desc">A web application for previewing Markdown text.</div>
+            <ul class="project-built-with">
+                <li>React</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/xaleel/Markdown-Previewer" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                <a href="https://xaleel.github.io/Markdown-Previewer/" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project right-align">
+            <div class="project-img-container">
+                <img src="sim.png" alt="wordle-app-screenshot" class="project-img">
+                <span class="img-overlay"></span>
+            </div>
+            <div class="project-title">Stock Portfolio SIMulator</div>
+            <div class="project-desc">Buy and sell shares to grow your wealth. Start with fake money and trade stocks with real-world prices that update in real time.</div>
+            <ul class="project-built-with">
+                <li>HTML/CSS</li>
+                <li>Flask</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/xaleel/Web-projects/tree/main/Finance" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <h3 id="other-projects-title">Other projects</h3>
+        <div class="other-projects">
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/url-shortener" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <h3>URL shortener</h3>
+                </div>
+                <p class="project-oth-desc">
+                    REST API - a simple URL shortener microservice made with Express and MongoDB
+                </p>
+                <ul class="project-oth-mw">
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/js-calculator/" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://xaleel.github.io/js-calculator/" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <h3>JS calculator</h3>
+                </div>
+                <p class="project-oth-desc">
+                    A simple Javascript calculator with <em>formula</em> logic. Supports keyboard input.
+                </p>
+                <ul class="project-oth-mw">
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/Pomodoro-Clock/" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://xaleel.github.io/Pomodoro-Clock/" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <h3>25+5 clock</h3>
+                </div>
+                <p class="project-oth-desc">
+                    Manage your time and be more productive using the Pomedoro technique. A simple 25 + 5 clock made with React.
+                </p>
+                <ul class="project-oth-mw">
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/Web-projects/tree/main/Commerce" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/watch?v=H6WQfRkn88E" target="_blank" class="l-icon tooltip tt-yt"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <h3>Commerce</h3>
+                </div>
+                <p class="project-oth-desc">
+                    A basic web application for auctioning and bidding on items.
+                </p>
+                <ul class="project-oth-mw">
+                    <li>HTML/CSS</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/random-quote" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://xaleel.github.io/random-quote/" target="_blank" class="l-icon tooltip tt-lv"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <h3>Random quote machine</h3>
+                </div>
+                <p class="project-oth-desc">
+                    Need inspiration? Get a random quote with one click and tweet it with another.
+                </p>
+                <ul class="project-oth-mw">
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="project-oth">
+                <div class="project-oth-title">
+                    <div class="project-oth-links">
+                        <a href="https://github.com/xaleel/Web-projects/tree/main/Network" target="_blank" class="l-icon tooltip tt-gh"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <h3>Exercise tracker API</h3>
+                </div>
+                <p class="project-oth-desc">
+                    An API with a database connection for saving exercise sessions.
+                </p>
+                <ul class="project-oth-mw">
+                    <li>ExpressJS</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="cv nodsp" id="resume" onclick="resume(event)">
-        <img src="cv.png" alt="cv" id="cv">
-        <div class="cv-btn">
-            <button class="cv-dl" onclick="resume(event)">Back</button>
-            <button class="cv-dl" onclick="dlcv()" id="cv-dl">Download</button>
+    <div class="section no-dsp-1" id="contact">
+        <div class="contact-left">
+            <h2 class="contact-left-txt">Contact me</h2>
+            <i class="fa-solid fa-arrow-left-long" id="arr"></i>
         </div>
+        <div class="contact-right">
+            <h2 class="form-title" id="form-title">Leave a message</h2> <div></div>
+            <form action="https://script.google.com/macros/s/AKfycbzyP2LEJP3PBiCmIF2_-cCULvxm3C9oA9fWMtLs-18yygDWi2n0Fs_D8AjB9BemZ0b2bQ/exec" method="POST" id="contact-form">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="sth@sth.sth" required>
+                <label for="title">Title</label>
+                <input type="text" name="title">
+                <label for="message">Message</label>
+                <textarea name="message" id="contact-message" cols="30" rows="10" required></textarea>
+                <div id="contact-form-msg"></div>
+                <button id="contact-form-submit" onclick="formSubmitHandler(event)"><i class="fa-solid fa-arrow-rotate-right no-dsp-2" id="spin"></i><span id="send-txt">Send</span></button>
+            </form>
+        </div>
+    </div>
+    <div class="left-icons no-dsp-1">
+        <a href="https://www.linkedin.com/in/KhaleelJaber"  target="_blank" class="l-icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/xaleel" target="_blank" id="gh-icon" class="l-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto: xaleelchess@gmail.com" class="l-icon" id="mail-icon"><i class="fa-solid fa-envelope-open-text"></i></a>
     </div>
 </body>
 </html>
