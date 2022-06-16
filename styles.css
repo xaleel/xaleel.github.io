@@ -15,7 +15,8 @@
         display: flex;
     }
     .about-left ul{
-        display: block !important;
+        display: flex !important;
+        flex-direction: column;
         list-style-type: none;
         padding-left: 0.75rem;
     }
