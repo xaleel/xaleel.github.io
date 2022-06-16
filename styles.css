@@ -480,6 +480,7 @@ ol li::marker{
     height: calc((3vh + 3vw) / 2);
     margin-right: 0.5rem;
     opacity: 0.65;
+    transition: all 200ms;
 }
 
 .pic{
