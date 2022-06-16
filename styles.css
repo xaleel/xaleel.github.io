@@ -454,11 +454,26 @@ ol li::marker{
 
 .about-left:hover{
     color: var(--light);
-    transition: color 200ms;
+    font-weight: 800;
+    transition: all 200ms;
 }
 
 .about-left > p, .about-left > ul{
     font-size: calc((2.25vh + 1.25vw) / 2);
+}
+
+.about-left > ul{
+    gap: 0.5rem;
+}
+
+.about-left > ul > li{
+    display: flex;
+    align-items: center;
+}
+
+.about-left > ul > li > img {
+    height: calc((3vh + 3vw) / 2);
+    margin-right: 0.5rem;
 }
 
 .pic{
