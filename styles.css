@@ -846,7 +846,7 @@ ul{
     list-style-type: none;
     justify-content: space-evenly;
     font-size: calc((1.75vh + 1.75vw) / 2);
-    color: var(--main-med);
+    color: var(--main-light);
     padding: 0;
 }
 
